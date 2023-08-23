@@ -8,10 +8,15 @@ body{
   font-family: 'Playfair', serif;
   font-family: 'Roboto Mono', monospace; */
   margin: 0;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
   width: 0rem;
+}
+
+p{
+  margin: 0;
 }
 
 /* contact details */
@@ -160,7 +165,7 @@ body::-webkit-scrollbar {
 .list-xs ul{
   list-style: none;
   padding-top: 5%;
-  font-size: small;
+  font-size: medium;
   /* display: flex; */
   flex-direction: column;
 }
@@ -197,17 +202,49 @@ body::-webkit-scrollbar {
 .serviceRow span{
   color: #0a2519;
 }
+
+.products{
+  padding: 3%;
+  background-color: #0a2519;
+  color: white;
+}
+.product-row{
+  display: flex;
+  justify-content: space-around;
+}
  
 /* Flip card styles */
 .mainContainer{
     position: relative;
+    color: #0a2519;
+    margin: 2%;
     width: 360px;
     height: 360px;
-   
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 1px 4px 14px 8px rgba(205, 235, 125, 0.5); /* Optional shadow for a 3D effect */
+    padding: 20px; /* Add some padding to the card content */
+    background-color: #fff; /* Background color */   
 }
+
+.tag {
+  position: absolute;
+  top: 3%;
+  left: -2%;
+  padding: 3% 8% 3% 3%;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50%;
+}
+
+.low{background-color: #01aa0f;}
+.high{background-color: #ee160f;}
+
 .theCard{
-    position: absolute;
-    width: 90%;
+    width: 100%;
     height: 90%;
     transform-style: preserve-3d;
     transition: all 0.5s ease ;
@@ -216,28 +253,32 @@ body::-webkit-scrollbar {
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
     backface-visibility: hidden;
 }
 .card-back{
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
     backface-visibility: hidden;
     transform: rotateY(180deg);
 }
 .theCard:hover{
     transform: rotateY(180deg);
 }
-.card1 img{
+/* .card1 img{
     height: 330px;
     }
 .card2 img{
     height: 310px;
-    }
-.mainContainer h3{
+    } */
+/* .mainContainer h3{
   margin-top: 325px;
   margin-left: 30px;
-}
+} */
 
 /* advantages */
 .advcontent1{
@@ -249,35 +290,42 @@ body::-webkit-scrollbar {
 }
 
 .advantages{
-  
-  background-color: white;
+  background-color:rgb(205, 235, 125);
+  padding: 4% 0 4% 0;
+  color: #0a2519;
 }
 
 .adv-heading{
   color: #0a2519;
 }
-  .advcontent h4{
-    color: black;
-  }
-  .advantages ul{
-    list-style: none;
-    text-decoration: none;
-    
-     }
-  .advcontent span{
-    font-size: large;
-    line-height: 1cm;
-    color: black;
-    text-decoration: none;
-     }
 
-     /* features */
-     .features-heading{
-      color: #0a2519;
-     }
-  .feature{
-    background-color:rgb(205, 235, 125);
-  }
+.adv-list{
+  margin: auto;
+}
+
+.advcontent h4{
+  color: #0a2519;
+}
+.advantages ul{
+  list-style: none;
+  text-decoration: none;
+  
+    }
+.advcontent span{
+  font-size: large;
+  line-height: 1cm;
+  color: #0a2519;
+  text-decoration: none;
+    }
+
+    /* features */
+.features-heading{
+color: #0a2519;
+}
+.feature{
+  background-color:#0a2519;
+  color: white;
+}
    
 
    /* footer */

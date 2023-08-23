@@ -1,0 +1,491 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Playfair:ital,wght@0,500;1,700&family=Roboto+Mono:wght@500&display=swap');
+
+body{
+    
+  /* font-family: 'EB Garamond', serif;
+  font-family: 'Playfair', serif;
+  font-family: 'Roboto Mono', monospace; */
+    margin: 0;    
+}
+
+/* contact details */
+.contact-Detail{
+    background-color: #0a2519 ;
+}
+.contactdetail{
+  color: white;
+}
+
+/* menu bar */
+.navbar-toggler .navbar-toggler-icon {
+  color: white !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  filter: invert(1);
+}
+
+
+
+.menuDecor{
+  background-color:#0a2519;
+  margin-top: -8px;
+    }
+.decor-Label label {
+  margin-right: 25px;
+  color:white; 
+  position: relative; 
+}
+.decor-Label label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(8, 63, 25); 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+.decor-Label:hover label {
+  color: rgb(8, 63, 25);
+}
+.decor-Label:hover label::after {
+  opacity: 1; 
+}
+.icon-Decor{
+    color:  rgb(3, 255, 3); 
+  }
+.extend-Size{
+    background-color: #212529;
+    margin-left: 0;
+}
+.image-slide img{
+    height: 583px;
+    object-fit: cover;
+}
+
+
+/* slide */
+.slide-Pic{
+  position: relative;
+  display: inline-block;
+  
+}
+.slide-Head{
+  position: absolute;
+  bottom:25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 25px;
+}
+/* about us */
+.aboutBox{
+    height: 75vh;
+    /* background-image: linear-gradient(#073a22,#dfe1ee);  */
+    background-color: #0a2519;
+    
+}
+.aboutImg{
+    width: 50%;
+}
+.aboutImg img{
+   
+    height: 70vh;
+    object-fit: cover;
+}
+
+.aboutUsText{
+  font-size: large;
+  color: white;
+}
+
+/* services */
+.serviceRow{
+    
+    padding-left: 110px;
+    font-size: large;
+    }
+.services{
+  height: 75vh;
+  /* background-image: linear-gradient(#ADD8E6,#dfe1ee); */
+  background-color:rgb(205, 235, 125);
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  }
+.services-xs{
+  height: 75vh;
+  background-color:rgb(205, 235, 125);
+  padding: 5%;
+  }
+
+.features-xs{
+  height: 90vh;
+  background-color:rgb(205, 235, 125);
+  padding: 10%;
+  }
+
+.features-xs ul img{
+  height: 3vh;
+}
+
+.features-xs ul li{
+  padding: 15% 0 0 0;
+}
+
+.list{
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.list-xs{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.list-xs ul{
+  list-style: none;
+  padding-top: 5%;
+  font-size: small;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.list-xs li{
+  padding: 3% 0 3% 0;
+}
+
+.list-xs img{
+  height: 7vh;
+}
+
+.list ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.list li{
+  padding: 10% 0 0 0;
+}
+
+/* .list img{
+  padding-right: 5%;
+  height: 40%;
+} */
+
+.service-Heading{
+  color: #0a2519;
+}
+.serviceRow span{
+  color: #0a2519;
+}
+ 
+/* Flip card styles */
+.mainContainer{
+    position: relative;
+    width: 360px;
+    height: 360px;
+   
+}
+.theCard{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease ;
+}
+.card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.theCard:hover{
+    transform: rotateY(180deg);
+}
+.card1 img{
+    height: 330px;
+    }
+.card2 img{
+    height: 310px;
+    }
+.mainContainer h3{
+  margin-top: 325px;
+  margin-left: 30px;
+}
+
+/* advantages */
+.advcontent1{
+  text-align: center;
+}
+.advcontent{
+  display: inline-block;
+  text-align: left;
+}
+
+.advantages{
+  
+  background-color: white;
+}
+
+.adv-heading{
+  color: #0a2519;
+}
+  .advcontent h4{
+    color: black;
+  }
+  .advantages ul{
+    list-style: none;
+    text-decoration: none;
+    
+     }
+  .advcontent span{
+    font-size: large;
+    line-height: 1cm;
+    color: black;
+    text-decoration: none;
+     }
+
+     /* features */
+     .features-heading{
+      color: #0a2519;
+     }
+  .feature{
+    background-color:rgb(205, 235, 125);
+  }
+   
+
+   /* footer */
+   .footer{
+    background-color: black;
+   }
+   .footerRow ul{
+    list-style: none;
+   }
+   .footerRow a{
+    text-decoration: none;
+    color: white;
+   }
+   .ourProduct span:hover{
+    
+    color: green;
+   }
+   .navi span:hover{
+    
+    color: green;
+   }
+   .footerRow span{
+    color: white;
+    line-height: 1cm;
+    font-size: 13px;
+    font-weight: lighter;
+   }
+   .footerRow h4{
+    color: white;
+    line-height: 1.5cm;
+    font-size: 17px;
+   }
+
+
+   /* social media icon */
+   
+   .socialicon {
+     display: flex; 
+     justify-content: center;
+     margin-right: 20px; 
+   }
+   
+   .socialicon a {
+     margin-right: 10px; 
+   }
+
+ /* whats app icon */
+ #whatsapp-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-menu-toggle {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.whatsapp-menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-menu-content {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-menu-content h4,
+.whatsapp-menu-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.whatsapp-menu-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.whatsapp-menu-toggle.active + .whatsapp-menu-content {
+  display: block;
+}
+
+.advcontent2 {
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.advcontent2 li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.tick-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.advcontent2 span {
+  color: #333;
+}
+
+.advcontent3 {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 40px 40px 40px 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.advcontent3:hover {
+  background-color: #DBA40E;
+}
+
+
+
+@media (min-width:768px){
+  .aboutBox{
+    height: 70vh;
+  }
+  .aboutUsText{
+    font-size: .9em;
+  }
+  .aboutImg img{
+
+    height: 65vh;
+  }
+  .services{
+    height: 65vh;
+  }
+  .list{
+    height: 70%;
+  }  
+  .list li{
+    padding: 5% 0 0 0;
+  }
+}
+
+@media (max-width:768px) {
+  .aboutBox{
+    height: 60vh;
+  }
+  .aboutImg img{
+  
+    height: 55vh;
+  }
+  .aboutUsText{
+    font-size: .8em;
+  }
+  .services{
+    height: 55vh;
+  }
+  .list{
+    height: 70%;
+    font-size: .8em;
+  }
+  .list img{
+    height: 60%;
+  }
+  .list li{
+    padding: 2% 0 0 0;
+  }
+}
+
+  @media (max-width:576px) {
+    .aboutBox{
+      height: 100vh;
+    }
+    .aboutImg{
+      width: 100%;
+    }
+    .aboutImg img{
+      width: 100%;
+    }
+    .aboutUsText{
+      font-size: .8em;
+    }
+    .services{
+      height: 50vh;
+    }
+    .list{
+      height: 60%;
+      font-size: .6em;
+    }
+    .list li img{
+      height: 40%;
+    }
+    .list li{
+      padding: 2% 0 0 0;
+    }
+  }
+
+
